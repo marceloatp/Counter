@@ -1,6 +1,14 @@
+import { CounterActions } from "./CounterActions";
+import { CounterDisplay } from "./CounterDisplay";
+
 export function Counter () {
 
     return (
-        <div>counter</div>
+        <div className="border rounded shadow-md">
+            <div className="p-2 text-center">
+                <CounterDisplay />
+            </div>
+            <CounterActions />
+        </div>
     )
 }
